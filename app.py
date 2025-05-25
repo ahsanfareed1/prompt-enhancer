@@ -5,7 +5,7 @@ import json
 app = Flask(__name__, static_folder="static", template_folder="templates")
 
 # OpenRouter API Key
-API_KEY = "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"
+API_KEY = "YOUR-API-KEY"
 
 # Enhance Prompt Function
 def enhance_prompt_openrouter(user_prompt):
