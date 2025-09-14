@@ -37,20 +37,26 @@ A comprehensive AI-powered career guidance platform that helps students discover
 
 ## 🏗️ Architecture
 
-### Backend (FastAPI + Python)
-- **Framework**: FastAPI with async/await support
-- **Database**: PostgreSQL with SQLAlchemy ORM
-- **Authentication**: JWT-based authentication with bcrypt password hashing
-- **AI Integration**: Google Gemini AI for career recommendations and assessments
-- **Vector Database**: Pinecone for semantic search and career matching
-- **Web Scraping**: Selenium for university data collection
+### High-Level Components
+- **API Layer (FastAPI)**: Exposes REST endpoints for authentication, student profiles, assessments, recommendations, programs, careers, and applications
+- **AI Services**: Orchestrates Gemini prompts for interview assessment, recommendation generation, and chat guidance
+- **Vector Search Service**: Maintains Pinecone indexes for careers/programs and serves semantic search queries
+- **Data Layer**: PostgreSQL as the system of record; SQLAlchemy models, migrations, and transactions
+- **Scraping/Sync Workers**: Selenium-driven collectors to ingest and refresh university program data
+- **Frontend SPA**: React app consuming the API, handling auth, and rendering dashboards for students and admins
 
-### Frontend (React + TypeScript)
-- **Framework**: React 19 with TypeScript
-- **Build Tool**: Vite for fast development and building
-- **Styling**: Tailwind CSS for responsive design
-- **Routing**: React Router for client-side navigation
-- **State Management**: React Context for authentication and app state
+### Request Flow (Example: Career Recommendation)
+1. Student completes the AI interview in the frontend
+2. Frontend submits responses to the API (authenticated via JWT)
+3. API persists results in PostgreSQL and calls the AI Service
+4. AI Service generates candidate careers using Gemini and enrichment rules
+5. API queries Pinecone for semantically similar careers/programs
+6. Aggregated recommendations are persisted and returned to the client
+
+### Data Storage
+- Relational data (students, programs, careers, applications, results) in PostgreSQL
+- Vector embeddings for careers/programs in Pinecone
+- Scraped artifacts normalized before persistence
 
 ## 🚀 Quick Start
 
