@@ -4,7 +4,7 @@ A comprehensive AI-powered career guidance platform that helps students discover
 
 ## 🖼️ Logo
 
-![Career Compass Logo](https://cdn.prod.website-files.com/669903682a6b61f0252476d1/66a25bfd9a4c57d67cbf6d98_ColorPrecision-Logo.avif)
+![Career Compass Logo](https://color-precision.myshopify.com/cdn/shop/files/671bb6d2c083c3543fe2ae98_Kodak_film_canister_-_Lightroom.png?v=1754170936&width=1680)
 
 
 ## 🌟 Features
