@@ -1,11 +1,6 @@
 # Career Compass 🎯
 
-A comprehensive AI-powered career guidance platform that helps students discover their ideal career paths through intelligent assessments, university program matching, and personalized recommendations.
-
-## 🖼️ Logo
-
-![Career Compass Logo](https://color-precision.myshopify.com/cdn/shop/files/671bb6d2c083c3543fe2ae98_Kodak_film_canister_-_Lightroom.png?v=1754170936&width=1680)
-
+A comprehensive AI-powered career guidance platform that helps students discover their ideal career paths through intelligent assessments, university program matching, and personalized recommendations. Built for students and institutions alike, Career Compass combines adaptive AI interviews, program matching, and application tracking into one streamlined experience, reducing decision fatigue and improving the quality of career choices with data-driven insights.
 
 ## 🌟 Features
 
@@ -21,6 +16,24 @@ A comprehensive AI-powered career guidance platform that helps students discover
 - **Career Database Management**: Add, edit, and manage career information and requirements
 - **Program Management**: Manage university programs and their details
 - **Analytics Dashboard**: View insights and statistics about student applications and career trends
+
+## 🧰 Tech Stack
+
+| Area | Technology | Notes |
+| --- | --- | --- |
+| Backend | FastAPI (Python 3.11) | Async API framework |
+| Database | PostgreSQL + SQLAlchemy (async) | Persistent storage and ORM |
+| Authentication | JWT + bcrypt | Secure auth and password hashing |
+| AI Integration | Google Gemini | Assessments and recommendations |
+| Vector Database | Pinecone | Semantic search and matching |
+| Web Scraping | Selenium | University data collection |
+| Frontend | React 19 + TypeScript | SPA with type safety |
+| Build Tool | Vite | Fast dev server and builds |
+| Styling | Tailwind CSS | Responsive, utility-first CSS |
+| Routing | React Router | Client-side navigation |
+| State Management | React Context | Auth and app state |
+| Package Managers | Poetry (backend), pnpm (frontend) | Dependency management |
+| API Docs | Swagger UI, ReDoc | Auto-generated documentation |
 
 ## 🏗️ Architecture
 
