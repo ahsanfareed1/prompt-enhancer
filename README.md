@@ -2,6 +2,11 @@
 
 A comprehensive AI-powered career guidance platform that helps students discover their ideal career paths through intelligent assessments, university program matching, and personalized recommendations.
 
+## 🖼️ Logo
+
+![Career Compass Logo](https://cdn.prod.website-files.com/669903682a6b61f0252476d1/66a25bfd9a4c57d67cbf6d98_ColorPrecision-Logo.avif)
+
+
 ## 🌟 Features
 
 ### For Students
